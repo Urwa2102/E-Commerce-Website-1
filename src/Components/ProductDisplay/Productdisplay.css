@@ -1,0 +1,142 @@
+.productdisplay {
+  display: flex;
+  margin: 0px 170px;
+  gap: 30px; /* Added gap between left and right sections */
+}
+
+.left {
+  display: flex;
+  gap: 17px;
+}
+
+.imglist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.imglist img {
+  height: 163px;
+  width: 100%; /* Ensures images fit within the container */
+}
+
+.mainimage {
+  width: 586px;
+  height: 700px;
+  object-fit: cover; /* Ensures the image fills the space without distorting */
+}
+
+.right {
+  margin: 45px -170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right h1 {
+  color: #3d3d3d;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.right-star {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 5px;
+  color: #1c1c1c;
+  font-size: 16px;
+}
+
+.productprices {
+  display: flex;
+  margin: 40px 0px;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.oldprice {
+  color: #818181;
+  text-decoration: line-through;
+}
+
+.newprice {
+  color: #ff4141;
+}
+
+.size h1 {
+  margin-top: 55px;
+  color: #656565;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.displaysizes {
+  display: flex;
+  margin: 30px 0px;
+  gap: 12px;
+}
+
+.displaysizes div {
+  padding: 18px 24px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.right button {
+  padding: 20px 40px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #ff4141;
+  margin-bottom: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.right button:active {
+  background: #d03b3b; /* Adds a darker color when the button is clicked */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .productdisplay {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .left {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .mainimage {
+    width: 100%;
+    height: auto;
+  }
+
+  .right h1 {
+    font-size: 30px;
+  }
+
+  .productprices {
+    font-size: 18px;
+    gap: 15px;
+  }
+
+  .displaysizes {
+    flex-direction: column;
+  }
+
+  .displaysizes div {
+    padding: 12px 20px;
+  }
+
+  .right button {
+    width: 100%;
+    font-size: 18px;
+  }
+}
